@@ -107,7 +107,7 @@ class GameSettings {
     val overview = OverviewPersistableData()
 
     /** Orientation for mobile platforms */
-    var displayOrientation = ScreenOrientation.Landscape
+    var displayOrientation = ScreenOrientation.Auto
 
     /** Saves the last successful new game's setup */
     var lastGameSetup: GameSetupInfo? = null
