@@ -169,7 +169,7 @@ open class UncivGame(val isConsoleMode: Boolean = false) : Game(), PlatformSpeci
                 ImageGetter.ruleset = vanillaRuleset // so that we can enter the map editor without having to load a game first
 
                 when {
-                    settings.isFreshlyCreated -> setAsRootScreen(LanguagePickerScreen())
+                    // settings.isFreshlyCreated -> setAsRootScreen(LanguagePickerScreen())
                     deepLinkedMultiplayerGame == null -> setAsRootScreen(MainMenuScreen())
                     else -> tryLoadDeepLinkedGame()
                 }
